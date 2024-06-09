@@ -1,0 +1,285 @@
+/*<!-- Tulsi Thakkar-->*/
+:root {
+    --orange: #5982bc;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid var(--black);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 59.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.heading span {
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+body {
+    background: url("../images/background2.jpg") repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn {
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header.logo h1
+{
+    font-size: 3.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.header .logo h1 i{
+    color: var(--black);
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+
+.header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: var(--orange);
+}
+
+.home {
+    padding: 5rem 5%;
+    min-height: 100vh;
+    background: url("../images/background2.jpg") repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.information {
+    margin-bottom: 5rem;
+    background: #fff;
+}
+
+.profiles img{
+    height: 30rem;
+    width: 30rem; 
+    object-fit: fill;
+    margin: 20px;
+}
+.product_details
+{
+    text-align: center;
+}
+
+.product_details h3{
+    color: var(--black);
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.product_details p{
+    font-size: 1.9rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.stars i{
+    font-size: 3rem;
+    color: var(--orange);
+    text-align: center;
+    padding: .5rem 0;
+    margin: 5px;
+}
+
+.btn-groups
+{
+    text-align: center;
+    margin: 10px;
+}
+.btn-groups i{
+    margin: 10px;
+    padding: 3px;
+}
+
+.crafts .crafts-slider
+{
+    padding: 1rem;
+    padding: 0.5rem; 
+    max-width: 80%; 
+    margin: 0 auto; 
+    
+}
+.crafts .crafts-slider:first-child
+{
+    margin-bottom: 2rem;
+}
+
+.crafts .crafts-slider .box
+{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1.5rem 1rem; 
+    margin-bottom: 1rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+    height: 50%;
+}
+
+.crafts .crafts-slider .box:hover{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.crafts .crafts-slider .box img{
+ 
+    height: 20rem; 
+    object-fit: cover;
+   
+}
+.crafts .crafts-slider .box a{
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.crafts .crafts-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.crafts .crafts-slider .box p{
+    font-size: 1.9rem;
+    color: var(--black);
+}
+
+.crafts .crafts-slider .box .price{
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: .5rem 0;
+}
+
+.share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+  }
+ 
+ .share a:hover{
+    background: var(--orange);
+    color: #fff;
+   }

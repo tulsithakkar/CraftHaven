@@ -1,0 +1,274 @@
+/*<!-- Tulsi Thakkar-->*/
+
+
+:root{
+    --orange: #5982bc;
+    --black: #130f40;
+    --light-color:#666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section{
+    padding: 2rem 2%;
+}
+
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black) ;
+
+}
+.heading span{
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%,0% 100%, 7% 50%,0% 0% );
+
+}
+
+
+body{
+    background: #eee;
+
+}
+
+.btn
+{
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+
+}
+.btn:hover
+{
+    background-color: var(--orange);
+    color: #fff;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header.logo h1
+{
+    font-size: 3.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.header .logo h1 i{
+    color: var(--black);
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .1rem;
+    cursor: pointer;
+    text-align: center;
+}
+.header .icons a i{
+    color: var(--black);
+}
+
+.header .icons div:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.home{
+    
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    height: 80rem;
+    padding-bottom: 10rem;
+}
+.register-form {
+    position: absolute;
+    top: 19%; 
+    right: 20px; 
+    padding: 20px;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 40%;
+    background: #fff;
+    text-align: center;
+    left: 30%;
+}
+
+.register-form .password {
+    position: absolute;
+    right: 30px;
+    top: 57%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.register-form .password:hover {
+    color: var(--orange);
+}
+
+.register-form .password-i{
+    position: absolute;
+    right: 30px;
+    top: 68%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.register-form .password-i:hover {
+    color: var(--orange);
+}
+
+
+.register-form .password-icon {
+    position: absolute;
+    right: 30px;
+    top: 58%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.register-form .password-icon:hover {
+    color: var(--orange);
+}
+
+
+
+
+
+.register-form h3{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--black);
+    padding-bottom: 2rem;
+}
+.register-form .box{
+    width: 100%;
+    margin: .7rem;
+    background: #eee;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.register-form label{
+    display: block;
+    font-size: 1.5rem;
+    padding: .2rem;
+    color: var(--black);
+    text-align: left;
+    margin: 0;
+}
+.register-form p{
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: var(--light-color);
+}
+
+.register-form p a{
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.register-form p a:hover{
+    color: var(--orange);
+}
+
+
+
+ 
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .header
+    {
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .password {
+        font-size: 18px; 
+        right: 5px; 
+    }
+    .password-i {
+        font-size: 18px; 
+        right: 5px; 
+    }
+    .password-icon {
+        font-size: 18px;
+        right: 5px; 
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+
+}
